@@ -7,14 +7,17 @@
 //
 
 #import "CLDataTool.h"
-
+/// 行政区划数据来源https://github.com/modood/Administrative-divisions-of-China
 @implementation CLDataTool
 
 /// for pcas-code.json  pca-code.json
 + (void)parseContainCodeDataFromJson:(void(^)(BOOL finish, NSArray <CLModel *>* locationCLModels))complete {
     
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
-        NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"pca-code" ofType:@"json"];
+//        NSString *path = [[NSBundle bundleForClass:[CLDataTool class]] pathForResource:@"ZSChooseLocation" ofType:@"bundle"];
+//        NSBundle *bundle = [NSBundle bundleWithPath:path];
+//        NSString *jsonPath = [bundle pathForResource:@"pca-code" ofType:@"json" inDirectory:@"Json"];
+        NSString *jsonPath = [self getPathFromZSChooseLocationBundleForResource:@"pca-code" ofType:@"json" inDirectory:@"Json"];
         NSData *data = [NSData dataWithContentsOfFile:jsonPath];
         NSError *error;
         BOOL finish = YES;
@@ -33,7 +36,10 @@
 /// for pac.json
 + (void)parseNoCodeDataFromJson:(void(^)(BOOL finish, NSArray <CLModel *>* locationCLModels))complete {
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
-        NSString *jsonPath = [[NSBundle mainBundle] pathForResource:@"pca" ofType:@"json"];
+//        NSString *path = [[NSBundle bundleForClass:[CLDataTool class]] pathForResource:@"ZSChooseLocation" ofType:@"bundle"];
+//        NSBundle *bundle = [NSBundle bundleWithPath:path];
+//        NSString *jsonPath = [bundle pathForResource:@"pca" ofType:@"json" inDirectory:@"Json"];
+        NSString *jsonPath = [self getPathFromZSChooseLocationBundleForResource:@"pca" ofType:@"json" inDirectory:@"Json"];
         NSData *data = [NSData dataWithContentsOfFile:jsonPath];
         NSError *error;
         BOOL finish = YES;
@@ -48,7 +54,13 @@
         });
     });
 }
-
+    
++ (NSString *)getPathFromZSChooseLocationBundleForResource:(NSString *)name ofType:(NSString *)ext inDirectory:(NSString *)subpath {
+    NSString *path = [[NSBundle bundleForClass:[CLDataTool class]] pathForResource:@"ZSChooseLocation" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:path];
+    NSString *jsonPath = [bundle pathForResource:name ofType:ext inDirectory:subpath];
+    return jsonPath;
+}
 + (NSArray <CLModel *>*)parseDataArray:(NSArray *)dicArray {
     NSMutableArray *array = [NSMutableArray array];
     for (NSInteger i = 0; i < dicArray.count; i++) {

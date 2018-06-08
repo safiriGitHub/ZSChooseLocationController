@@ -29,8 +29,9 @@
         self.titleLab = titleLab;
         [self addSubview:titleLab];
         
+        NSString *imgFile = [CLDataTool getPathFromZSChooseLocationBundleForResource:@"cl_close@2x" ofType:@"png" inDirectory:@"Image"];
         UIButton *closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [closeBtn setImage:[UIImage imageNamed:@"cl_close.png"] forState:UIControlStateNormal];
+        [closeBtn setImage:[UIImage imageWithContentsOfFile:imgFile] forState:UIControlStateNormal];
         [closeBtn addTarget:self action:@selector(closeClick) forControlEvents:UIControlEventTouchUpInside];
         self.closeBtn = closeBtn;
         [self addSubview:closeBtn];

@@ -22,10 +22,8 @@
 		03780EF920CA2E1400352C18 /* CLSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EEB20CA2E1300352C18 /* CLSegmentView.m */; };
 		03780EFA20CA2E1400352C18 /* CLSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EEC20CA2E1300352C18 /* CLSelectView.m */; };
 		03780EFB20CA2E1400352C18 /* CLTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EED20CA2E1300352C18 /* CLTitleView.m */; };
-		03780EFC20CA2E1400352C18 /* cl_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03780EEF20CA2E1300352C18 /* cl_selected@2x.png */; };
-		03780EFD20CA2E1400352C18 /* cl_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 03780EF020CA2E1300352C18 /* cl_close@2x.png */; };
-		03780EFE20CA2E1400352C18 /* pca-code.json in Resources */ = {isa = PBXBuildFile; fileRef = 03780EF120CA2E1300352C18 /* pca-code.json */; };
 		03780EFF20CA2E1400352C18 /* ZSChooseLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EF220CA2E1300352C18 /* ZSChooseLocationController.m */; };
+		03C9B2C120CAD2D000DBBE5E /* ZSChooseLocation.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03C9B2C020CAD2D000DBBE5E /* ZSChooseLocation.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,10 +56,8 @@
 		03780EEB20CA2E1300352C18 /* CLSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSegmentView.m; sourceTree = "<group>"; };
 		03780EEC20CA2E1300352C18 /* CLSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSelectView.m; sourceTree = "<group>"; };
 		03780EED20CA2E1300352C18 /* CLTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTitleView.m; sourceTree = "<group>"; };
-		03780EEF20CA2E1300352C18 /* cl_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cl_selected@2x.png"; sourceTree = "<group>"; };
-		03780EF020CA2E1300352C18 /* cl_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cl_close@2x.png"; sourceTree = "<group>"; };
-		03780EF120CA2E1300352C18 /* pca-code.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pca-code.json"; sourceTree = "<group>"; };
 		03780EF220CA2E1300352C18 /* ZSChooseLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSChooseLocationController.m; sourceTree = "<group>"; };
+		03C9B2C020CAD2D000DBBE5E /* ZSChooseLocation.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZSChooseLocation.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,9 +168,7 @@
 		03780EEE20CA2E1300352C18 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				03780EEF20CA2E1300352C18 /* cl_selected@2x.png */,
-				03780EF020CA2E1300352C18 /* cl_close@2x.png */,
-				03780EF120CA2E1300352C18 /* pca-code.json */,
+				03C9B2C020CAD2D000DBBE5E /* ZSChooseLocation.bundle */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -236,12 +230,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03780EFC20CA2E1400352C18 /* cl_selected@2x.png in Resources */,
-				03780EFE20CA2E1400352C18 /* pca-code.json in Resources */,
+				03C9B2C120CAD2D000DBBE5E /* ZSChooseLocation.bundle in Resources */,
 				03780ECD20CA285500352C18 /* LaunchScreen.storyboard in Resources */,
 				03780ECA20CA285500352C18 /* Assets.xcassets in Resources */,
 				03780EC820CA285300352C18 /* Main.storyboard in Resources */,
-				03780EFD20CA2E1400352C18 /* cl_close@2x.png in Resources */,
 				03780EF820CA2E1400352C18 /* CLSelectViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

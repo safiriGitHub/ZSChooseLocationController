@@ -13,7 +13,9 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    NSString *imgFile = [CLDataTool getPathFromZSChooseLocationBundleForResource:@"cl_selected@2x" ofType:@"png" inDirectory:@"Image"];
+    self.selectedImgView.image = [UIImage imageWithContentsOfFile:imgFile];
 }
 - (void)refreshCell:(CLModel *)model {
     self.locationLab.text = model.name;

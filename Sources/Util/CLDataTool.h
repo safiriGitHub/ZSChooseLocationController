@@ -13,5 +13,5 @@
 
 + (void)parseContainCodeDataFromJson:(void(^)(BOOL finish, NSArray <CLModel *>* locationCLModels))complete;
 + (void)parseNoCodeDataFromJson:(void(^)(BOOL finish, NSArray <CLModel *>* locationCLModels))complete;
-
++ (NSString *)getPathFromZSChooseLocationBundleForResource:(NSString *)name ofType:(NSString *)ext inDirectory:(NSString *)subpath;
 @end
