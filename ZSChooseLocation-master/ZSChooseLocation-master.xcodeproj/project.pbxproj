@@ -158,14 +158,14 @@
 		03780EE420CA2E1300352C18 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				03780EE520CA2E1300352C18 /* CLSelectViewCell.m */,
-				03780EE620CA2E1300352C18 /* CLSelectView.h */,
 				03780EE720CA2E1300352C18 /* CLSegmentView.h */,
-				03780EE820CA2E1300352C18 /* CLTitleView.h */,
-				03780EE920CA2E1300352C18 /* CLSelectViewCell.h */,
-				03780EEA20CA2E1300352C18 /* CLSelectViewCell.xib */,
 				03780EEB20CA2E1300352C18 /* CLSegmentView.m */,
+				03780EE620CA2E1300352C18 /* CLSelectView.h */,
 				03780EEC20CA2E1300352C18 /* CLSelectView.m */,
+				03780EE920CA2E1300352C18 /* CLSelectViewCell.h */,
+				03780EE520CA2E1300352C18 /* CLSelectViewCell.m */,
+				03780EEA20CA2E1300352C18 /* CLSelectViewCell.xib */,
+				03780EE820CA2E1300352C18 /* CLTitleView.h */,
 				03780EED20CA2E1300352C18 /* CLTitleView.m */,
 			);
 			path = View;

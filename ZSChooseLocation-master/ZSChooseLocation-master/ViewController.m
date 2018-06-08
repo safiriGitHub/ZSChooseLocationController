@@ -51,6 +51,13 @@
     [[CLPopAnimation shareAnimation] showDownPopView:self.choosePicker];
 }
 - (IBAction)ShowZSChooseLocationControllerClick:(id)sender {
+    /*ex: 控制状态栏颜色
+     @weakify(self);
+     [[CLPopAnimation shareAnimation] setStatusBarAppearanceUpdateCallBack:^{
+     @strongify(self);
+     [self setNeedsStatusBarAppearanceUpdate];
+     }];
+     */
     //[[CLPopAnimation shareAnimation] startAnimationRootView:self.navigationController.view andPopView:self.chooseController completion:nil];
     [[CLPopAnimation shareAnimation] startAnimationRootView:self.view andPopView:self.chooseController completion:nil];
 }
