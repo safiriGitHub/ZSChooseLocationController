@@ -91,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Sources", "Sources/**/*.{h,m,xib}"
+  # s.source_files  = "Sources", "Sources/**/*.{h,m,xib}"
   #s.exclude_files = "Classes/Exclude"
 
   #s.public_header_files = "Sources/ZSChooseLocation.h,Sources/ChooseLocationController/ZSChooseLocationController.h,Sources/ChooseLocationPicker/ChooseLocationPicker.h,Sources/tools/CLConfigs.h"
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resources = "Sources/ChooseLocationController/Resource/*.png"
+  s.resources = "Sources/Resource/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
