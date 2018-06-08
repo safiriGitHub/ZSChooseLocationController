@@ -40,7 +40,7 @@ CGFloat timeInterval = 0.3;
     UIView * maskView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     maskView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
     maskView.alpha = 0;
-    UITapGestureRecognizer *tap_close = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(closeAnimation)];
+    UITapGestureRecognizer *tap_close = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(dismissPopView)];
     maskView.userInteractionEnabled = YES;
     [maskView addGestureRecognizer:tap_close];
     [kKeyWindow addSubview:maskView];
@@ -64,7 +64,7 @@ CGFloat timeInterval = 0.3;
     }];
 }
 
-- (void)closeAnimation {
+- (void)dismissPopView {
     
     [self.rootView endEditing:YES];
     [UIView animateWithDuration:timeInterval animations:^{

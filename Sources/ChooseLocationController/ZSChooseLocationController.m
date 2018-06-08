@@ -1,18 +1,18 @@
 //
-//  ChooseLocationController.m
+//  ZSChooseLocationController.m
 //  CheFu365
 //
 //  Created by safiri on 2018/4/19.
 //  Copyright © 2018年 safiri. All rights reserved.
 //
 
-#import "ChooseLocationController.h"
+#import "ZSChooseLocationController.h"
 
 #import "CLTitleView.h"
 #import "CLSegmentView.h"
 #import "CLSelectView.h"
 
-@interface ChooseLocationController ()<ChooseLocationDelegate>
+@interface ZSChooseLocationController ()<ChooseLocationDelegate>
 
 @property (nonatomic ,weak) CLTitleView *clTitleView;
 
@@ -21,7 +21,7 @@
 @property (nonatomic ,weak) CLSelectView *clSelectView;
 @end
 
-@implementation ChooseLocationController
+@implementation ZSChooseLocationController
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

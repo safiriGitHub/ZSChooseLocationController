@@ -1,15 +1,15 @@
 //
-//  ChooseLocationPicker.m
+//  ZSChooseLocationPicker.m
 //  CheFu365
 //
 //  Created by safiri on 2018/5/4.
 //  Copyright © 2018年 safiri. All rights reserved.
 //
 
-#import "ChooseLocationPicker.h"
+#import "ZSChooseLocationPicker.h"
 #import "CLDataTool.h"
 
-@interface ChooseLocationPicker() <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface ZSChooseLocationPicker() <UIPickerViewDelegate, UIPickerViewDataSource>
 
 /// 顶部视图
 @property (nonatomic ,weak) UIView *topTitleView;
@@ -35,7 +35,7 @@
 @property (nonatomic ,assign) NSInteger streetSelectedRow;
 @end
 
-@implementation ChooseLocationPicker
+@implementation ZSChooseLocationPicker
 {
     NSString *_selectedProvinceTitle;
     NSString *_selectedCityTitle;

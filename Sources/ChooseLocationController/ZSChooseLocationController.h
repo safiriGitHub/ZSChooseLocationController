@@ -1,5 +1,5 @@
 //
-//  ChooseLocationController.h
+//  ZSChooseLocationController.h
 //  CheFu365
 //
 //  Created by safiri on 2018/4/19.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "CLConfigs.h"
-#import "CLPopAnimation.h"
 #import "CLDataTool.h"
 
-@interface ChooseLocationController : UIView
+@interface ZSChooseLocationController : UIView
 
 @property (nonatomic ,weak) id <ChooseLocationDelegate>delegate;
 

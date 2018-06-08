@@ -1,5 +1,5 @@
 //
-//  ChooseLocationPicker.h
+//  ZSChooseLocationPicker.h
 //  CheFu365
 //
 //  Created by safiri on 2018/5/4.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CLConfigs.h"
 
-@interface ChooseLocationPicker : UIView
+@interface ZSChooseLocationPicker : UIView
 
 /// 指定最小层的地区，根据数据源调整 默认为LocationLevelDistrict
 @property (nonatomic ,assign) LocationLevelTag lastLocationLevelTag;

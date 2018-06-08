@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef void(^CloseCompletion)(BOOL finished);
 typedef void(^SetNeedsStatusBarAppearanceUpdateCallBack)(void);
+
 @interface CLPopAnimation : NSObject
 
 /// YES:hide NO:show 暂时不用
@@ -30,7 +32,7 @@ typedef void(^SetNeedsStatusBarAppearanceUpdateCallBack)(void);
 
 @property (nonatomic ,copy) CloseCompletion closeCompletion;
 @property (nonatomic ,copy) SetNeedsStatusBarAppearanceUpdateCallBack statusBarAppearanceUpdateCallBack;
-- (void)closeAnimation;
+- (void)dismissPopView;
 
 /** 从底部向上展示View
  */
