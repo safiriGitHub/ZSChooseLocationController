@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "ZSChooseLocation.h"
+#import "ZSChooseLocationController.h"
+#import "ZSChooseLocationPicker.h"
 
 @interface ViewController ()<ChooseLocationPickerDelegate, ChooseLocationDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *chooseResultLab;

@@ -62,7 +62,6 @@
 		03780EF020CA2E1300352C18 /* cl_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cl_close@2x.png"; sourceTree = "<group>"; };
 		03780EF120CA2E1300352C18 /* pca-code.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pca-code.json"; sourceTree = "<group>"; };
 		03780EF220CA2E1300352C18 /* ZSChooseLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSChooseLocationController.m; sourceTree = "<group>"; };
-		03780F0020CA315E00352C18 /* ZSChooseLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZSChooseLocation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +111,8 @@
 		03780ED620CA2E1300352C18 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				03780F0020CA315E00352C18 /* ZSChooseLocation.h */,
-				03780EDB20CA2E1300352C18 /* tools */,
+				03780EEE20CA2E1300352C18 /* Resource */,
+				03780EDB20CA2E1300352C18 /* Util */,
 				03780ED720CA2E1300352C18 /* ChooseLocationPicker */,
 				03780EDA20CA2E1300352C18 /* ChooseLocationController */,
 			);
@@ -135,13 +134,12 @@
 			children = (
 				03780EE320CA2E1300352C18 /* ZSChooseLocationController.h */,
 				03780EF220CA2E1300352C18 /* ZSChooseLocationController.m */,
-				03780EEE20CA2E1300352C18 /* Resource */,
 				03780EE420CA2E1300352C18 /* View */,
 			);
 			path = ChooseLocationController;
 			sourceTree = "<group>";
 		};
-		03780EDB20CA2E1300352C18 /* tools */ = {
+		03780EDB20CA2E1300352C18 /* Util */ = {
 			isa = PBXGroup;
 			children = (
 				03780EE120CA2E1300352C18 /* CLConfigs.h */,
@@ -152,7 +150,7 @@
 				03780EE020CA2E1300352C18 /* CLPopAnimation.h */,
 				03780EDE20CA2E1300352C18 /* CLPopAnimation.m */,
 			);
-			path = tools;
+			path = Util;
 			sourceTree = "<group>";
 		};
 		03780EE420CA2E1300352C18 /* View */ = {

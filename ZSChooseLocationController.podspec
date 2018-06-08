@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZSChooseLocationController"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "地址选择控件"
 
   # This description is used to generate tags and improve search results.
@@ -105,11 +105,24 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "Sources/ChooseLocationController/Resource/pca-code.json"
   s.resources = "Sources/ChooseLocationController/Resource/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
+  # --- Subspec------------------------#
+  s.subspec 'Util' do |ss|
+    ss.source_files = "Sources/Util/**/*.{h,m}"
+  end
+
+  s.subspec 'ChooseLocationController' do |ss|
+    ss.dependency 'ZSChooseLocationController/Util'
+    ss.source_files = "Sources/ChooseLocationController/**/*.{h,m,xib,json}"
+  end
+
+  s.subspec 'ChooseLocationPicker' do |ss|
+    ss.dependency 'ZSChooseLocationController/Util'
+    ss.source_files = "Sources/ChooseLocationPicker/**/*.{h,m}"
+  end
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

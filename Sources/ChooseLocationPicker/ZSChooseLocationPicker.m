@@ -7,7 +7,7 @@
 //
 
 #import "ZSChooseLocationPicker.h"
-#import "CLDataTool.h"
+#import "CLConfigs.h"
 
 @interface ZSChooseLocationPicker() <UIPickerViewDelegate, UIPickerViewDataSource>
 

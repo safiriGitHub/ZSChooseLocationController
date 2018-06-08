@@ -10,6 +10,8 @@
 #define CLConfigs_h
 
 #import "CLModel.h"
+#import "CLDataTool.h"
+#import "CLPopAnimation.h"
 
 #define CLTitleColor [UIColor colorWithRed:155/255.f green:159/255.f blue:170/255.f alpha:1]
 #define LocationTextNormalColor [UIColor colorWithRed:91/255.f green:100/255.f blue:105/255.f alpha:1]

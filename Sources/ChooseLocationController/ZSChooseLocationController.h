@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "CLConfigs.h"
-#import "CLDataTool.h"
 
 @interface ZSChooseLocationController : UIView
 
