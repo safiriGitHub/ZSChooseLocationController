@@ -12,9 +12,14 @@ UIPickerView选择地址控件
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+引入所有
+
+- pod 'ZSChooseLocationController'
+
+`引入subspec例子 pod 'AFNetworking',:subspecs=>['Reachability','Security'] 或者 pod 'AFNetworking/Reachability'`
+
+- pod 'ZSChooseLocationController/ChooseLocationController'
+- pod 'ZSChooseLocationController/ChooseLocationPicker'
 
 #### 使用说明
 
