@@ -18,7 +18,6 @@
 		03780EF520CA2E1400352C18 /* CLDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EDF20CA2E1300352C18 /* CLDataTool.m */; };
 		03780EF620CA2E1400352C18 /* CLModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EE220CA2E1300352C18 /* CLModel.m */; };
 		03780EF720CA2E1400352C18 /* CLSelectViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EE520CA2E1300352C18 /* CLSelectViewCell.m */; };
-		03780EF820CA2E1400352C18 /* CLSelectViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03780EEA20CA2E1300352C18 /* CLSelectViewCell.xib */; };
 		03780EF920CA2E1400352C18 /* CLSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EEB20CA2E1300352C18 /* CLSegmentView.m */; };
 		03780EFA20CA2E1400352C18 /* CLSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EEC20CA2E1300352C18 /* CLSelectView.m */; };
 		03780EFB20CA2E1400352C18 /* CLTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03780EED20CA2E1300352C18 /* CLTitleView.m */; };
@@ -52,7 +51,6 @@
 		03780EE720CA2E1300352C18 /* CLSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSegmentView.h; sourceTree = "<group>"; };
 		03780EE820CA2E1300352C18 /* CLTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTitleView.h; sourceTree = "<group>"; };
 		03780EE920CA2E1300352C18 /* CLSelectViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSelectViewCell.h; sourceTree = "<group>"; };
-		03780EEA20CA2E1300352C18 /* CLSelectViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CLSelectViewCell.xib; sourceTree = "<group>"; };
 		03780EEB20CA2E1300352C18 /* CLSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSegmentView.m; sourceTree = "<group>"; };
 		03780EEC20CA2E1300352C18 /* CLSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSelectView.m; sourceTree = "<group>"; };
 		03780EED20CA2E1300352C18 /* CLTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTitleView.m; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 				03780EEC20CA2E1300352C18 /* CLSelectView.m */,
 				03780EE920CA2E1300352C18 /* CLSelectViewCell.h */,
 				03780EE520CA2E1300352C18 /* CLSelectViewCell.m */,
-				03780EEA20CA2E1300352C18 /* CLSelectViewCell.xib */,
 				03780EE820CA2E1300352C18 /* CLTitleView.h */,
 				03780EED20CA2E1300352C18 /* CLTitleView.m */,
 			);
@@ -234,7 +231,6 @@
 				03780ECD20CA285500352C18 /* LaunchScreen.storyboard in Resources */,
 				03780ECA20CA285500352C18 /* Assets.xcassets in Resources */,
 				03780EC820CA285300352C18 /* Main.storyboard in Resources */,
-				03780EF820CA2E1400352C18 /* CLSelectViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

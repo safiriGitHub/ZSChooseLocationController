@@ -34,7 +34,7 @@
 
 #pragma mark - ChooseLocationPickerDelegate
 - (void)dismissChoosPicker {
-    [[CLPopAnimation shareAnimation] dismissDownPopView];
+    [[CLPopAnimation shareAnimation] dismissPopView];
 }
 - (void)confirmSelectedAreaResultWithProvince:(NSString *)provinceTitle city:(NSString *)cityTitle district:(NSString *)districtTitle {
     self.chooseResultLab.text = [NSString stringWithFormat:@"%@ %@ %@",provinceTitle,cityTitle,districtTitle];
