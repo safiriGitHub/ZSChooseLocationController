@@ -11,8 +11,6 @@
 #define CLSelectViewCellHeight 26
 @class CLModel;
 @interface CLSelectViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *locationLab;
-@property (weak, nonatomic) IBOutlet UIImageView *selectedImgView;
 
 - (void)refreshCell:(CLModel *)model;
 
