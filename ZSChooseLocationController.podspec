@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZSChooseLocationController"
-  s.version      = "0.0.3.1"
+  s.version      = "0.0.4"
   s.summary      = "地址选择控件"
 
   # This description is used to generate tags and improve search results.
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'ChooseLocationController' do |ss|
     ss.dependency 'ZSChooseLocationController/Util'
-    ss.source_files = "Sources/ChooseLocationController/**/*.{h,m,xib}"
+    ss.source_files = "Sources/ChooseLocationController/**/*.{h,m}"
     ss.resources = "Sources/Resource/ZSChooseLocation.bundle"
   end
 
