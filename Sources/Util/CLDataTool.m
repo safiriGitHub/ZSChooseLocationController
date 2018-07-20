@@ -54,11 +54,15 @@
         });
     });
 }
-    
-+ (NSString *)getPathFromZSChooseLocationBundleForResource:(NSString *)name ofType:(NSString *)ext inDirectory:(NSString *)subpath {
+
++ (NSBundle *)resourceBundle {
     NSString *path = [[NSBundle bundleForClass:[CLDataTool class]] pathForResource:@"ZSChooseLocation" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:path];
-    NSString *jsonPath = [bundle pathForResource:name ofType:ext inDirectory:subpath];
+    return bundle;
+}
++ (NSString *)getPathFromZSChooseLocationBundleForResource:(NSString *)name ofType:(NSString *)ext inDirectory:(NSString *)subpath {
+    
+    NSString *jsonPath = [self.resourceBundle pathForResource:name ofType:ext inDirectory:subpath];
     return jsonPath;
 }
 + (NSArray <CLModel *>*)parseDataArray:(NSArray *)dicArray {
