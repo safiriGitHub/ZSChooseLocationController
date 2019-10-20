@@ -117,8 +117,8 @@
 		03780ED720CA2E1300352C18 /* ChooseLocationPicker */ = {
 			isa = PBXGroup;
 			children = (
-				03780ED820CA2E1300352C18 /* ZSChooseLocationPicker.m */,
 				03780ED920CA2E1300352C18 /* ZSChooseLocationPicker.h */,
+				03780ED820CA2E1300352C18 /* ZSChooseLocationPicker.m */,
 			);
 			path = ChooseLocationPicker;
 			sourceTree = "<group>";

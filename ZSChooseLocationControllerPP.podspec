@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "ZSChooseLocationController"
+  s.name         = "ZSChooseLocationControllerPP"
   s.version      = "0.0.4"
   s.summary      = "地址选择控件"
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://zhangshuai@192.168.1.70:10101/r/iOS/cocoaPods/ZSChooseLocationController.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/safiriGitHub/ZSChooseLocationController.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -115,13 +115,13 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ChooseLocationController' do |ss|
-    ss.dependency 'ZSChooseLocationController/Util'
+    ss.dependency 'ZSChooseLocationControllerPP/Util'
     ss.source_files = "Sources/ChooseLocationController/**/*.{h,m}"
     ss.resources = "Sources/Resource/ZSChooseLocation.bundle"
   end
 
   s.subspec 'ChooseLocationPicker' do |ss|
-    ss.dependency 'ZSChooseLocationController/Util'
+    ss.dependency 'ZSChooseLocationControllerPP/Util'
     ss.source_files = "Sources/ChooseLocationPicker/**/*.{h,m}"
     ss.resources = "Sources/Resource/ZSChooseLocation.bundle"
   end
